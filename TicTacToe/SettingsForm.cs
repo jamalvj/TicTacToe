@@ -40,7 +40,7 @@ namespace TicTacToe
 
       public void mit_Freund(object sender, EventArgs e)
       {
-         GameForm from = new GameForm(3);
+         EnterPlayerNames from = new EnterPlayerNames();
          from.Show();
       }
    }

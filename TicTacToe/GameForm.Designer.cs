@@ -54,10 +54,10 @@ namespace TicTacToe
          label1.AccessibleName = "";
          label1.AutoSize = true;
          label1.ForeColor = Color.Blue;
-         label1.Location = new Point(69, 75);
+         label1.Location = new Point(41, 75);
          label1.Margin = new Padding(4, 0, 4, 0);
          label1.Name = "label1";
-         label1.Size = new Size(68, 20);
+         label1.Size = new Size(129, 37);
          label1.TabIndex = 9;
          label1.Text = "Player1\r\n";
          // 
@@ -65,10 +65,10 @@ namespace TicTacToe
          // 
          label2.AutoSize = true;
          label2.ForeColor = Color.Green;
-         label2.Location = new Point(381, 75);
+         label2.Location = new Point(353, 75);
          label2.Margin = new Padding(4, 0, 4, 0);
          label2.Name = "label2";
-         label2.Size = new Size(68, 20);
+         label2.Size = new Size(131, 37);
          label2.TabIndex = 10;
          label2.Text = "Player2";
          // 
@@ -202,29 +202,29 @@ namespace TicTacToe
          // 
          // label3
          // 
-         label3.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+         label3.Font = new Font("Microsoft Sans Serif", 19.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
          label3.ForeColor = Color.Blue;
-         label3.Location = new Point(69, 22);
+         label3.Location = new Point(78, 9);
          label3.Name = "label3";
-         label3.Size = new Size(34, 40);
+         label3.Size = new Size(54, 54);
          label3.TabIndex = 21;
          label3.Text = "X";
          // 
          // label4
          // 
-         label4.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+         label4.Font = new Font("Microsoft Sans Serif", 19.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
          label4.ForeColor = Color.Green;
-         label4.Location = new Point(381, 22);
+         label4.Location = new Point(386, 9);
          label4.Name = "label4";
-         label4.Size = new Size(41, 40);
+         label4.Size = new Size(71, 54);
          label4.TabIndex = 22;
          label4.Text = "O";
          // 
          // GameForm
          // 
-         AutoScaleDimensions = new SizeF(10F, 20F);
+         AutoScaleDimensions = new SizeF(20F, 37F);
          AutoScaleMode = AutoScaleMode.Font;
-         ClientSize = new Size(543, 674);
+         ClientSize = new Size(537, 683);
          Controls.Add(label4);
          Controls.Add(label3);
          Controls.Add(button10);

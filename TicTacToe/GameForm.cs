@@ -16,10 +16,12 @@ namespace TicTacToe
       int playerwins = 0;
       int computerWins = 0;
       readonly int gamemodes;
+      string name1;
+      string name2;
 
       public System.Windows.Forms.Timer AImoves { get; set; }
 
-      public GameForm(int gamemode)
+      public GameForm(int gamemode, string player1 = "", string player2 = "")
       {
          InitializeComponent();
          resetGame();
@@ -31,6 +33,13 @@ namespace TicTacToe
          else if (gamemodes == 2)
          {
             AImoves = AImoves_hard;
+         }
+         else if (player1 != "" && player2 != "") 
+         {
+            name1 = player1;
+            name2 = player2;
+            label1.Text = player1;
+            label2.Text = player2;
          }
          
 
@@ -530,9 +539,9 @@ namespace TicTacToe
              || button1.Text == "X" && button5.Text == "X" && button9.Text == "X"
              || button3.Text == "X" && button5.Text == "X" && button7.Text == "X")
          {
-            MessageBox.Show("Player Wins X");
+            MessageBox.Show(name1 + " Wins");
             playerwins++;
-            label1.Text = "Player Wins-" + playerwins;
+            label1.Text = name1 + " Wins-" + playerwins;
             resetGame();
          }
          // Wir O gewinnen
@@ -545,9 +554,9 @@ namespace TicTacToe
                  || button1.Text == "O" && button5.Text == "O" && button9.Text == "O"
                  || button3.Text == "O" && button5.Text == "O" && button7.Text == "O")
          {
-            MessageBox.Show("Player Wins O");
+            MessageBox.Show(name2 + " Wins");
             computerWins++;
-            label2.Text = "Player Wins- " + computerWins;
+            label2.Text = name2 + " Wins- " + computerWins;
             resetGame();
          }
          else if (buttons?.Any() == false)
